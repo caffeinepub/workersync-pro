@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --radius: 0.75rem;
+
+    /* Dark neon palette — all OKLCH L C H */
+    --background: 5% 0.01 270;
+    --foreground: 95% 0.01 270;
+    --card: 8% 0.015 270;
+    --card-foreground: 95% 0.01 270;
+    --popover: 10% 0.015 270;
+    --popover-foreground: 95% 0.01 270;
+    --primary: 60% 0.28 300;
+    --primary-foreground: 98% 0 0;
+    --secondary: 12% 0.02 270;
+    --secondary-foreground: 90% 0.01 270;
+    --muted: 12% 0.02 270;
+    --muted-foreground: 55% 0.02 270;
+    --accent: 15% 0.03 270;
+    --accent-foreground: 90% 0.01 270;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 100% 0 0 / 8%;
+    --input: 100% 0 0 / 10%;
+    --ring: 60% 0.28 300;
+    --chart-1: 60% 0.28 300;
+    --chart-2: 60% 0.2 240;
+    --chart-3: 75% 0.18 195;
+    --chart-4: 65% 0.25 340;
+    --chart-5: 65% 0.2 145;
+    --sidebar: 8% 0.015 270;
+    --sidebar-foreground: 90% 0.01 270;
+    --sidebar-primary: 60% 0.28 300;
+    --sidebar-primary-foreground: 98% 0 0;
+    --sidebar-accent: 12% 0.02 270;
+    --sidebar-accent-foreground: 90% 0.01 270;
+    --sidebar-border: 100% 0 0 / 8%;
+    --sidebar-ring: 60% 0.28 300;
+  }
+
+  .dark {
+    --background: 5% 0.01 270;
+    --foreground: 95% 0.01 270;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
